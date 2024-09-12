@@ -1,0 +1,18 @@
+<div class="container mt-5">
+  <div class="alert alert-success">
+    <h4 class="alert-heading">¡Éxito!</h4>
+    <p>El usuario ha sido registrado con éxito.</p>
+    <hr>
+    <p class="mb-0">Datos ingresados:</p>
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Nombre:</strong> <%= params[:name] %></li>
+      <li class="list-group-item"><strong>Edad:</strong> <%= params[:age] %></li>
+      <li class="list-group-item"><strong>Email:</strong> <%= params[:email] %></li>
+    </ul>
+  </div>
+
+  <!-- Botón para volver al formulario (index) -->
+  <div class="mt-4">
+    <%= link_to 'Agregar otro usuario', root_path, class: 'btn btn-primary' %>
+  </div>
+</div>
